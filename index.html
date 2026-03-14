@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donde Nacen las Ideas</title>
+    <meta
+      name="description"
+      content="DNI es una compañía pequeña que hace productos digitales con calma, criterio y algo de diversión. Aquí vive su manifiesto y los productos que ya están afuera."
+    >
+    <meta name="theme-color" content="#f6f4ef">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="https://dni.lat/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Donde Nacen las Ideas">
+    <meta property="og:title" content="Donde Nacen las Ideas">
+    <meta
+      property="og:description"
+      content="Productos digitales para humanos reales. Sin aspavientos, con criterio, humor y bastante aire."
+    >
+    <meta property="og:url" content="https://dni.lat/">
+    <link rel="alternate" hreflang="es" href="https://dni.lat/">
+    <link rel="alternate" hreflang="en" href="https://dni.lat/en/">
+    <link rel="alternate" hreflang="x-default" href="https://dni.lat/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+    >
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script>
+      (() => {
+        document.documentElement.classList.add("js");
+        const storedTheme = localStorage.getItem("dni-theme");
+        const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (systemPrefersDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body data-locale="es">
+    <a class="skip-link" href="#content">Saltar al contenido</a>
+    <div class="page-shell">
+      <header class="site-header reveal" style="--i: 0;">
+        <a class="brand" href="/" aria-label="Ir al inicio">
+          <span class="brand__eyebrow">Productos para humanos</span>
+          <span class="brand__name">Donde Nacen las Ideas</span>
+        </a>
+        <div class="site-header__controls">
+          <nav class="locale-switch" aria-label="Idioma">
+            <a class="locale-switch__link is-active" href="/" aria-current="page">ES</a>
+            <a class="locale-switch__link" href="/en/">EN</a>
+          </nav>
+          <button class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+            <span class="theme-toggle__label">Tema</span>
+            <span class="theme-toggle__value" data-theme-label>Claro</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="content">
+        <section class="hero section-grid">
+          <div class="hero__lead reveal" style="--i: 1;">
+            <p class="section-kicker">Sitio corporativo, sí. Drama corporativo, no.</p>
+            <h1>
+              Hacemos productos digitales por gusto.
+              <span>
+                A veces porque hacen falta. A veces porque da risa no intentarlo.
+              </span>
+            </h1>
+          </div>
+          <div class="hero__aside reveal" style="--i: 2;">
+            <p>
+              DNI es una compañía pequeña de tecnología. Nos gusta hacer pocas cosas, con calma, y
+              soltarlas cuando ya se sienten amables, útiles y listas para vivir afuera.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#manifesto">Leer manifiesto</a>
+              <a class="button button--ghost" href="#products">Ver producto público</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="manifesto section-grid" id="manifesto">
+          <div class="section-heading reveal" style="--i: 0;">
+            <p class="section-kicker">Manifiesto</p>
+            <h2>Nos gustan los productos que resuelven algo real y luego se quitan del camino.</h2>
+          </div>
+          <div class="manifesto__body reveal" style="--i: 1;">
+            <p>
+              No todo problema necesita una plataforma enorme, un dashboard con quince pestañas o una
+              ronda de adjetivos grandilocuentes. A veces basta con una herramienta clara, bien hecha y
+              lo bastante humana para no estorbar.
+            </p>
+            <p>
+              Hacemos software para personas reales: gente con pendientes, oficio, prisa, ideas, dudas
+              y cosas mejores que hacer que pelearse con una interfaz caprichosa.
+            </p>
+            <p>
+              Si algo sale al público es porque ya se siente útil, ligero y agradable de usar. Si todavía
+              se siente tieso, ruidoso o presumido, mejor se queda en casa un rato más.
+            </p>
+          </div>
+          <div class="manifesto__notes reveal" style="--i: 2;">
+            <p>Menos exhibición. Más utilidad.</p>
+            <p>Menos plantilla. Más criterio.</p>
+            <p>Menos “ecosistema”. Más producto.</p>
+          </div>
+        </section>
+
+        <section class="products section-grid" id="products">
+          <div class="section-heading reveal" style="--i: 0;">
+            <p class="section-kicker">Lo que ya está afuera</p>
+            <h2>Un producto público. Un problema menos fastidioso.</h2>
+          </div>
+          <article class="product-card reveal" style="--i: 1;">
+            <div class="product-card__meta">
+              <img
+                class="product-card__logo"
+                src="/assets/factucat-logo.svg"
+                alt="Logo de FactuCat"
+                loading="lazy"
+              >
+              <p class="product-card__state">Público</p>
+              <h3>FactuCat</h3>
+              <p class="product-card__eyebrow">Facturación para humanos</p>
+            </div>
+            <div class="product-card__content">
+              <p>
+                FactuCat te ayuda a emitir CFDI, nómina y autofacturas por QR o correo sin andar
+                peleándote con el SAT ni con portales que parecen castigo administrativo.
+              </p>
+              <p>
+                Es un producto claro, legal y suficientemente amable como para que facturar vuelva a
+                sentirse como una tarea normal y no como una pequeña tragedia fiscal.
+              </p>
+              <a class="product-link" href="https://factucat.com" target="_blank" rel="noopener noreferrer">
+                Visitar factucat.com
+              </a>
+            </div>
+          </article>
+          <aside class="products__teaser reveal" style="--i: 2;">
+            <p class="section-kicker">Y sí, hay más cosas cocinándose</p>
+            <p>
+              No muchas. Las suficientes. Preferimos mostrar solo lo que ya se puede tocar sin pedir
+              paciencia por adelantado.
+            </p>
+          </aside>
+        </section>
+
+        <section class="contact section-grid" id="contact">
+          <div class="section-heading reveal" style="--i: 0;">
+            <p class="section-kicker">Contacto</p>
+            <h2>Si algo de esto te late, escríbenos.</h2>
+          </div>
+          <div class="contact__body reveal" style="--i: 1;">
+            <p>
+              Nos gusta hablar con personas reales antes de sonar como empresa grande. Si quieres saludar,
+              preguntar algo o contarnos un problema interesante, acá estamos.
+            </p>
+            <a class="contact-link" href="mailto:hola@dni.lat">hola@dni.lat</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/assets/site.js"></script>
+  </body>
+</html>

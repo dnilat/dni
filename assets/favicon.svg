@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title>DNI</title>
+  <rect width="96" height="96" rx="24" fill="#111614"/>
+  <path d="M27 24v48h9.5V40.4l21.2 31.6H69V24h-9.5v31.5L38.3 24H27Z" fill="#eef2eb"/>
+  <circle cx="75" cy="71" r="6" fill="#6fb388"/>
+</svg>
