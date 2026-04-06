@@ -381,6 +381,10 @@ main {
   margin-bottom: 0.55rem;
 }
 
+.product-card__logo--libro {
+  width: clamp(9.5rem, 15vw, 12rem);
+}
+
 .product-card h3 {
   margin: 0.25rem 0 0;
   font-size: clamp(2rem, 3vw, 3rem);
@@ -395,6 +399,12 @@ main {
   display: grid;
   gap: 1rem;
   align-content: start;
+}
+
+.product-card--warm {
+  background:
+    linear-gradient(180deg, color-mix(in oklch, var(--surface-0) 92%, transparent), color-mix(in oklch, var(--surface-0) 92%, var(--surface-1))),
+    color-mix(in oklch, oklch(72% 0.08 35) 8%, var(--surface-0));
 }
 
 .product-link,
