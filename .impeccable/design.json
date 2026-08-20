@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-19T18:24:53-06:00",
+  "title": "Design System: Donde Nacen las Ideas",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Primary",
+        "canonical": "oklch(16.7% 0.016 156.8)",
+        "tonalRamp": [
+          "oklch(15% 0.016 156.8)",
+          "oklch(26% 0.016 156.8)",
+          "oklch(37% 0.016 156.8)",
+          "oklch(49% 0.016 156.8)",
+          "oklch(61% 0.016 156.8)",
+          "oklch(73% 0.016 156.8)",
+          "oklch(84% 0.016 156.8)",
+          "oklch(95% 0.016 156.8)"
+        ]
+      },
+      "surface-paper": {
+        "role": "neutral",
+        "displayName": "Surface Paper",
+        "canonical": "oklch(95.4% 0.011 95.2)",
+        "tonalRamp": [
+          "oklch(15% 0.011 95.2)",
+          "oklch(26% 0.011 95.2)",
+          "oklch(37% 0.011 95.2)",
+          "oklch(49% 0.011 95.2)",
+          "oklch(61% 0.011 95.2)",
+          "oklch(73% 0.011 95.2)",
+          "oklch(84% 0.011 95.2)",
+          "oklch(95% 0.011 95.2)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Surface Raised",
+        "canonical": "oklch(98.2% 0.007 97.4)",
+        "tonalRamp": [
+          "oklch(15% 0.007 97.4)",
+          "oklch(26% 0.007 97.4)",
+          "oklch(37% 0.007 97.4)",
+          "oklch(49% 0.007 97.4)",
+          "oklch(61% 0.007 97.4)",
+          "oklch(73% 0.007 97.4)",
+          "oklch(84% 0.007 97.4)",
+          "oklch(95% 0.007 97.4)"
+        ]
+      },
+      "text-ink": {
+        "role": "neutral",
+        "displayName": "Text Ink",
+        "canonical": "oklch(19.3% 0.013 145.1)",
+        "tonalRamp": [
+          "oklch(15% 0.013 145.1)",
+          "oklch(26% 0.013 145.1)",
+          "oklch(37% 0.013 145.1)",
+          "oklch(49% 0.013 145.1)",
+          "oklch(61% 0.013 145.1)",
+          "oklch(73% 0.013 145.1)",
+          "oklch(84% 0.013 145.1)",
+          "oklch(95% 0.013 145.1)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "canonical": "oklch(43.4% 0.019 148.1)",
+        "tonalRamp": [
+          "oklch(15% 0.019 148.1)",
+          "oklch(26% 0.019 148.1)",
+          "oklch(37% 0.019 148.1)",
+          "oklch(49% 0.019 148.1)",
+          "oklch(61% 0.019 148.1)",
+          "oklch(73% 0.019 148.1)",
+          "oklch(84% 0.019 148.1)",
+          "oklch(95% 0.019 148.1)"
+        ]
+      },
+      "divider": {
+        "role": "neutral",
+        "displayName": "Divider",
+        "canonical": "oklch(81.2% 0.017 133.8)",
+        "tonalRamp": [
+          "oklch(15% 0.017 133.8)",
+          "oklch(26% 0.017 133.8)",
+          "oklch(37% 0.017 133.8)",
+          "oklch(49% 0.017 133.8)",
+          "oklch(61% 0.017 133.8)",
+          "oklch(73% 0.017 133.8)",
+          "oklch(84% 0.017 133.8)",
+          "oklch(95% 0.017 133.8)"
+        ]
+      },
+      "surface-paper-dark": {
+        "role": "neutral",
+        "displayName": "Surface Paper Dark",
+        "canonical": "oklch(17.8% 0.014 159.6)",
+        "tonalRamp": [
+          "oklch(15% 0.014 159.6)",
+          "oklch(26% 0.014 159.6)",
+          "oklch(37% 0.014 159.6)",
+          "oklch(49% 0.014 159.6)",
+          "oklch(61% 0.014 159.6)",
+          "oklch(73% 0.014 159.6)",
+          "oklch(84% 0.014 159.6)",
+          "oklch(95% 0.014 159.6)"
+        ]
+      },
+      "surface-raised-dark": {
+        "role": "neutral",
+        "displayName": "Surface Raised Dark",
+        "canonical": "oklch(21.0% 0.019 158.0)",
+        "tonalRamp": [
+          "oklch(15% 0.019 158.0)",
+          "oklch(26% 0.019 158.0)",
+          "oklch(37% 0.019 158.0)",
+          "oklch(49% 0.019 158.0)",
+          "oklch(61% 0.019 158.0)",
+          "oklch(73% 0.019 158.0)",
+          "oklch(84% 0.019 158.0)",
+          "oklch(95% 0.019 158.0)"
+        ]
+      },
+      "text-ink-dark": {
+        "role": "neutral",
+        "displayName": "Text Ink Dark",
+        "canonical": "oklch(95.5% 0.013 130.8)",
+        "tonalRamp": [
+          "oklch(15% 0.013 130.8)",
+          "oklch(26% 0.013 130.8)",
+          "oklch(37% 0.013 130.8)",
+          "oklch(49% 0.013 130.8)",
+          "oklch(61% 0.013 130.8)",
+          "oklch(73% 0.013 130.8)",
+          "oklch(84% 0.013 130.8)",
+          "oklch(95% 0.013 130.8)"
+        ]
+      },
+      "text-muted-dark": {
+        "role": "neutral",
+        "displayName": "Text Muted Dark",
+        "canonical": "oklch(77.4% 0.021 143.0)",
+        "tonalRamp": [
+          "oklch(15% 0.021 143.0)",
+          "oklch(26% 0.021 143.0)",
+          "oklch(37% 0.021 143.0)",
+          "oklch(49% 0.021 143.0)",
+          "oklch(61% 0.021 143.0)",
+          "oklch(73% 0.021 143.0)",
+          "oklch(84% 0.021 143.0)",
+          "oklch(95% 0.021 143.0)"
+        ]
+      },
+      "divider-dark": {
+        "role": "neutral",
+        "displayName": "Divider Dark",
+        "canonical": "oklch(36.4% 0.024 156.8)",
+        "tonalRamp": [
+          "oklch(15% 0.024 156.8)",
+          "oklch(26% 0.024 156.8)",
+          "oklch(37% 0.024 156.8)",
+          "oklch(49% 0.024 156.8)",
+          "oklch(61% 0.024 156.8)",
+          "oklch(73% 0.024 156.8)",
+          "oklch(84% 0.024 156.8)",
+          "oklch(95% 0.024 156.8)"
+        ]
+      },
+      "overlay-paper": {
+        "role": "neutral",
+        "displayName": "Overlay Paper",
+        "canonical": "oklch(96.9% 0.008 98.9)",
+        "tonalRamp": [
+          "oklch(15% 0.008 98.9)",
+          "oklch(26% 0.008 98.9)",
+          "oklch(37% 0.008 98.9)",
+          "oklch(49% 0.008 98.9)",
+          "oklch(61% 0.008 98.9)",
+          "oklch(73% 0.008 98.9)",
+          "oklch(84% 0.008 98.9)",
+          "oklch(95% 0.008 98.9)"
+        ]
+      },
+      "moss": {
+        "role": "primary",
+        "displayName": "Moss",
+        "canonical": "oklch(46.9% 0.076 154.6)",
+        "tonalRamp": [
+          "oklch(15% 0.076 154.6)",
+          "oklch(26% 0.076 154.6)",
+          "oklch(37% 0.076 154.6)",
+          "oklch(49% 0.076 154.6)",
+          "oklch(61% 0.076 154.6)",
+          "oklch(73% 0.076 154.6)",
+          "oklch(84% 0.076 154.6)",
+          "oklch(95% 0.076 154.6)"
+        ]
+      },
+      "leaf": {
+        "role": "primary",
+        "displayName": "Leaf",
+        "canonical": "oklch(84.6% 0.120 137.5)",
+        "tonalRamp": [
+          "oklch(15% 0.120 137.5)",
+          "oklch(26% 0.120 137.5)",
+          "oklch(37% 0.120 137.5)",
+          "oklch(49% 0.120 137.5)",
+          "oklch(61% 0.120 137.5)",
+          "oklch(73% 0.120 137.5)",
+          "oklch(84% 0.120 137.5)",
+          "oklch(95% 0.120 137.5)"
+        ]
+      },
+      "amber-signal": {
+        "role": "tertiary",
+        "displayName": "Amber Signal",
+        "canonical": "oklch(78.3% 0.135 68.8)",
+        "tonalRamp": [
+          "oklch(15% 0.135 68.8)",
+          "oklch(26% 0.135 68.8)",
+          "oklch(37% 0.135 68.8)",
+          "oklch(49% 0.135 68.8)",
+          "oklch(61% 0.135 68.8)",
+          "oklch(73% 0.135 68.8)",
+          "oklch(84% 0.135 68.8)",
+          "oklch(95% 0.135 68.8)"
+        ]
+      },
+      "contact-field": {
+        "role": "primary",
+        "displayName": "Contact Field",
+        "canonical": "oklch(29.9% 0.051 153.0)",
+        "tonalRamp": [
+          "oklch(15% 0.051 153.0)",
+          "oklch(26% 0.051 153.0)",
+          "oklch(37% 0.051 153.0)",
+          "oklch(49% 0.051 153.0)",
+          "oklch(61% 0.051 153.0)",
+          "oklch(73% 0.051 153.0)",
+          "oklch(84% 0.051 153.0)",
+          "oklch(95% 0.051 153.0)"
+        ]
+      },
+      "factucat-surface": {
+        "role": "secondary",
+        "displayName": "Factucat Surface",
+        "canonical": "oklch(87.0% 0.046 299.3)",
+        "tonalRamp": [
+          "oklch(15% 0.046 299.3)",
+          "oklch(26% 0.046 299.3)",
+          "oklch(37% 0.046 299.3)",
+          "oklch(49% 0.046 299.3)",
+          "oklch(61% 0.046 299.3)",
+          "oklch(73% 0.046 299.3)",
+          "oklch(84% 0.046 299.3)",
+          "oklch(95% 0.046 299.3)"
+        ]
+      },
+      "factucat-field": {
+        "role": "secondary",
+        "displayName": "Factucat Field",
+        "canonical": "oklch(24.6% 0.049 298.7)",
+        "tonalRamp": [
+          "oklch(15% 0.049 298.7)",
+          "oklch(26% 0.049 298.7)",
+          "oklch(37% 0.049 298.7)",
+          "oklch(49% 0.049 298.7)",
+          "oklch(61% 0.049 298.7)",
+          "oklch(73% 0.049 298.7)",
+          "oklch(84% 0.049 298.7)",
+          "oklch(95% 0.049 298.7)"
+        ]
+      },
+      "factucat-accent": {
+        "role": "secondary",
+        "displayName": "Factucat Accent",
+        "canonical": "oklch(78.7% 0.124 297.8)",
+        "tonalRamp": [
+          "oklch(15% 0.124 297.8)",
+          "oklch(26% 0.124 297.8)",
+          "oklch(37% 0.124 297.8)",
+          "oklch(49% 0.124 297.8)",
+          "oklch(61% 0.124 297.8)",
+          "oklch(73% 0.124 297.8)",
+          "oklch(84% 0.124 297.8)",
+          "oklch(95% 0.124 297.8)"
+        ]
+      },
+      "factucat-link": {
+        "role": "secondary",
+        "displayName": "Factucat Link",
+        "canonical": "oklch(32.0% 0.094 299.0)",
+        "tonalRamp": [
+          "oklch(15% 0.094 299.0)",
+          "oklch(26% 0.094 299.0)",
+          "oklch(37% 0.094 299.0)",
+          "oklch(49% 0.094 299.0)",
+          "oklch(61% 0.094 299.0)",
+          "oklch(73% 0.094 299.0)",
+          "oklch(84% 0.094 299.0)",
+          "oklch(95% 0.094 299.0)"
+        ]
+      },
+      "factucat-ink": {
+        "role": "secondary",
+        "displayName": "Factucat Ink",
+        "canonical": "oklch(19.1% 0.014 291.6)",
+        "tonalRamp": [
+          "oklch(15% 0.014 291.6)",
+          "oklch(26% 0.014 291.6)",
+          "oklch(37% 0.014 291.6)",
+          "oklch(49% 0.014 291.6)",
+          "oklch(61% 0.014 291.6)",
+          "oklch(73% 0.014 291.6)",
+          "oklch(84% 0.014 291.6)",
+          "oklch(95% 0.014 291.6)"
+        ]
+      },
+      "factucat-copy": {
+        "role": "secondary",
+        "displayName": "Factucat Copy",
+        "canonical": "oklch(94.3% 0.019 295.9)",
+        "tonalRamp": [
+          "oklch(15% 0.019 295.9)",
+          "oklch(26% 0.019 295.9)",
+          "oklch(37% 0.019 295.9)",
+          "oklch(49% 0.019 295.9)",
+          "oklch(61% 0.019 295.9)",
+          "oklch(73% 0.019 295.9)",
+          "oklch(84% 0.019 295.9)",
+          "oklch(95% 0.019 295.9)"
+        ]
+      },
+      "libro-surface": {
+        "role": "tertiary",
+        "displayName": "Libro Surface",
+        "canonical": "oklch(83.4% 0.097 42.7)",
+        "tonalRamp": [
+          "oklch(15% 0.097 42.7)",
+          "oklch(26% 0.097 42.7)",
+          "oklch(37% 0.097 42.7)",
+          "oklch(49% 0.097 42.7)",
+          "oklch(61% 0.097 42.7)",
+          "oklch(73% 0.097 42.7)",
+          "oklch(84% 0.097 42.7)",
+          "oklch(95% 0.097 42.7)"
+        ]
+      },
+      "libro-field": {
+        "role": "tertiary",
+        "displayName": "Libro Field",
+        "canonical": "oklch(34.5% 0.078 34.5)",
+        "tonalRamp": [
+          "oklch(15% 0.078 34.5)",
+          "oklch(26% 0.078 34.5)",
+          "oklch(37% 0.078 34.5)",
+          "oklch(49% 0.078 34.5)",
+          "oklch(61% 0.078 34.5)",
+          "oklch(73% 0.078 34.5)",
+          "oklch(84% 0.078 34.5)",
+          "oklch(95% 0.078 34.5)"
+        ]
+      },
+      "libro-link": {
+        "role": "tertiary",
+        "displayName": "Libro Link",
+        "canonical": "oklch(38.6% 0.094 35.4)",
+        "tonalRamp": [
+          "oklch(15% 0.094 35.4)",
+          "oklch(26% 0.094 35.4)",
+          "oklch(37% 0.094 35.4)",
+          "oklch(49% 0.094 35.4)",
+          "oklch(61% 0.094 35.4)",
+          "oklch(73% 0.094 35.4)",
+          "oklch(84% 0.094 35.4)",
+          "oklch(95% 0.094 35.4)"
+        ]
+      },
+      "libro-stage-ink": {
+        "role": "tertiary",
+        "displayName": "Libro Stage Ink",
+        "canonical": "oklch(21.7% 0.030 40.2)",
+        "tonalRamp": [
+          "oklch(15% 0.030 40.2)",
+          "oklch(26% 0.030 40.2)",
+          "oklch(37% 0.030 40.2)",
+          "oklch(49% 0.030 40.2)",
+          "oklch(61% 0.030 40.2)",
+          "oklch(73% 0.030 40.2)",
+          "oklch(84% 0.030 40.2)",
+          "oklch(95% 0.030 40.2)"
+        ]
+      },
+      "book-paper": {
+        "role": "tertiary",
+        "displayName": "Book Paper",
+        "canonical": "oklch(91.4% 0.057 79.9)",
+        "tonalRamp": [
+          "oklch(15% 0.057 79.9)",
+          "oklch(26% 0.057 79.9)",
+          "oklch(37% 0.057 79.9)",
+          "oklch(49% 0.057 79.9)",
+          "oklch(61% 0.057 79.9)",
+          "oklch(73% 0.057 79.9)",
+          "oklch(84% 0.057 79.9)",
+          "oklch(95% 0.057 79.9)"
+        ]
+      },
+      "book-ink": {
+        "role": "tertiary",
+        "displayName": "Book Ink",
+        "canonical": "oklch(28.5% 0.037 43.0)",
+        "tonalRamp": [
+          "oklch(15% 0.037 43.0)",
+          "oklch(26% 0.037 43.0)",
+          "oklch(37% 0.037 43.0)",
+          "oklch(49% 0.037 43.0)",
+          "oklch(61% 0.037 43.0)",
+          "oklch(73% 0.037 43.0)",
+          "oklch(84% 0.037 43.0)",
+          "oklch(95% 0.037 43.0)"
+        ]
+      },
+      "contact-copy": {
+        "role": "neutral",
+        "displayName": "Contact Copy",
+        "canonical": "oklch(96.1% 0.018 134.9)",
+        "tonalRamp": [
+          "oklch(15% 0.018 134.9)",
+          "oklch(26% 0.018 134.9)",
+          "oklch(37% 0.018 134.9)",
+          "oklch(49% 0.018 134.9)",
+          "oklch(61% 0.018 134.9)",
+          "oklch(73% 0.018 134.9)",
+          "oklch(84% 0.018 134.9)",
+          "oklch(95% 0.018 134.9)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "hero-display": {
+        "displayName": "Hero Display",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "section-display": {
+        "displayName": "Section Display",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "manifesto-headline": {
+        "displayName": "Manifesto Headline",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "product-headline": {
+        "displayName": "Product Headline",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "contact-display": {
+        "displayName": "Contact Display",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "legal-heading": {
+        "displayName": "Legal Heading",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "nav-label": {
+        "displayName": "Nav Label",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "action-label": {
+        "displayName": "Action Label",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      },
+      "motion-label": {
+        "displayName": "Motion Label",
+        "purpose": "Implemented typography role documented in DESIGN.md."
+      }
+    },
+    "shadows": [
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 5px #173521",
+        "purpose": "Two-tone keyboard focus."
+      },
+      {
+        "name": "book-lift",
+        "value": "0 28px 65px rgb(34 12 7 / .44)",
+        "purpose": "Physical book depth."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "UI states."
+      },
+      {
+        "name": "video-fade",
+        "value": "opacity 700ms ease",
+        "purpose": "Poster to video."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms; no video load",
+        "purpose": "Accessible fallback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "collapse",
+        "value": "68rem"
+      },
+      {
+        "name": "mobile",
+        "value": "42rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Overlay Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item-overlay",
+      "description": "Uppercase header link.",
+      "html": "<a class=\"ds-nav\">PRODUCTOS</a>",
+      "css": ".ds-nav{min-height:2.75rem;color:#f6f5ef;background:#09110c;font:580 .75rem \"Bricolage Grotesque\"}.ds-nav:focus-visible{outline:2px solid #f6f5ef;outline-offset:2px;box-shadow:0 0 0 5px #173521}"
+    },
+    {
+      "name": "Ruled Action",
+      "kind": "button",
+      "refersTo": "line-link-light",
+      "description": "Text-first action.",
+      "html": "<a class=\"ds-action\">CONOCE EL ESTUDIO</a>",
+      "css": ".ds-action{min-height:3rem;border-bottom:1px solid;color:#f6f5ef;background:#09110c;font:650 .83rem \"Bricolage Grotesque\"}.ds-action:focus-visible{outline:2px solid #f6f5ef;outline-offset:2px;box-shadow:0 0 0 5px #173521}"
+    },
+    {
+      "name": "FactuCat Message",
+      "kind": "custom",
+      "refersTo": "factucat-message",
+      "description": "Violet translation panel.",
+      "html": "<div class=\"ds-factucat\">CFDI listo para revisar.</div>",
+      "css": ".ds-factucat{padding:1.35rem;border:1px solid #c3a8ff;color:#edeaf8;background:#241b35}"
+    },
+    {
+      "name": "Libro Book",
+      "kind": "custom",
+      "refersTo": "libro-book",
+      "description": "Rotated physical book.",
+      "html": "<div class=\"ds-book\">tu peque</div>",
+      "css": ".ds-book{width:15rem;aspect-ratio:3/4;padding:2rem;color:#3a241b;background:#f7dfb8;box-shadow:0 28px 65px rgba(34,12,7,.44);transform:rotate(4deg)}"
+    },
+    {
+      "name": "Contact Callout",
+      "kind": "custom",
+      "refersTo": "contact-callout",
+      "description": "Green closing field.",
+      "html": "<section class=\"ds-contact\">hola@dni.lat</section>",
+      "css": ".ds-contact{padding:5rem;color:#edf5e9;background:#173521;font:260 4rem \"Bricolage Grotesque\"}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Synthetic Idea Garden",
+    "overview": "The Synthetic Idea Garden treats DNI as a living field in which one human signal organizes many precise synthetic responses. The shared world is editorial and cinematic: a full-bleed forest scene opens the homepage, while warm paper and ruled type create long, calm reading stages for the studio, manifesto, products, team, contact, and legal copy.\n\nDensity stays low and composition stays asymmetric. Oversized narrow text, generous responsive gaps, square controls, hairline dividers, and two product-specific material worlds supply character without turning the site into a generic card grid. The system is bilingual and theme-aware, with motion enhancement subordinate to static legibility.",
+    "keyCharacteristics": [
+      "Forest-black cinematic fields beside warm editorial paper.",
+      "One variable grotesque family stretched across display, body, label, and legal roles.",
+      "Asymmetric two-column compositions that collapse to a single reading sequence.",
+      "Square controls, hairline rules, and restrained depth.",
+      "Product-specific lavender and peach stages inside the shared DNI frame."
+    ],
+    "rules": [
+      {
+        "name": "Controlled Field Rule",
+        "body": "Forest black, warm paper, and green carry DNI; lavender and peach belong only to the product worlds, and amber remains a signal inside the hero asset.",
+        "section": "colors"
+      },
+      {
+        "name": "One-Family Rule",
+        "body": "Bricolage Grotesque carries display, body, labels, and legal copy; hierarchy comes from width, weight, size, case, and spacing rather than a second family.",
+        "section": "typography"
+      },
+      {
+        "name": "Flat-by-Default Rule",
+        "body": "Editorial surfaces remain flat and square; shadows are reserved for the hero signal, keyboard focus halo, and the physical book artifact.",
+        "section": "elevation-depth"
+      }
+    ],
+    "dos": [
+      "Do keep the shared DNI world anchored in forest black, warm paper, green signals, oversized narrow type, and hairline rules.",
+      "Do keep FactuCat lavender/violet and Libro Chiquito peach/brown inside their respective product stages.",
+      "Do preserve the `68rem` and `42rem` layout changes, especially the single-column reading order and edge-to-edge mobile product panels.",
+      "Do preserve the poster-first hero, the explicit video-readiness gate, the data-saver check, and reduced-motion behavior.",
+      "Do use the supplied product logos and the local variable font without redrawing or substituting them.",
+      "Do keep keyboard focus, the skip link, semantic labels, localized control text, and visible motion/theme state when extending existing components."
+    ],
+    "donts": [
+      "Don't replace the editorial stages with a generic corporate hero, feature-card grid, or a dense dashboard vocabulary.",
+      "Don't promote amber or either product palette into a general-purpose DNI accent system.",
+      "Don't add routine rounded containers, pills, gradients, or shadows to the square, ruled shared interface.",
+      "Don't make video, animation, or decorative illustration necessary to understand content or operate a control.",
+      "Don't invent inputs, modals, chips, testimonials, metrics, or a generalized card library from this implementation.",
+      "Don't treat the FactuCat and Libro Chiquito stage treatments as definitions of those products' independent design systems."
+    ]
+  }
+}
