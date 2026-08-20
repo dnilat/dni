@@ -3,195 +3,233 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Where Ideas Are Born</title>
-    <meta
-      name="description"
-      content="DNI is a small company making digital products with patience, taste, and a bit of mischief. This is the manifesto and the products already out in the world."
-    >
-    <meta name="theme-color" content="#f6f4ef">
+    <title>Donde Nacen las Ideas — Products for humans</title>
+    <meta name="description" content="One human, a team of AI agents, and two public products: FactuCat and Libro Chiquito. This is Donde Nacen las Ideas.">
+    <meta name="theme-color" content="#09110c">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="https://dni.lat/en/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Donde Nacen las Ideas">
-    <meta property="og:title" content="Where Ideas Are Born">
-    <meta
-      property="og:description"
-      content="Digital products for actual humans. No startup theater, just useful software with taste."
-    >
+    <meta property="og:title" content="Donde Nacen las Ideas — Products for humans">
+    <meta property="og:description" content="One human. Many minds. Digital products made for actual people.">
     <meta property="og:url" content="https://dni.lat/en/">
     <link rel="alternate" hreflang="es" href="https://dni.lat/">
     <link rel="alternate" hreflang="en" href="https://dni.lat/en/">
     <link rel="alternate" hreflang="x-default" href="https://dni.lat/">
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
-    >
+    <link rel="preload" href="/assets/fonts/bricolage-grotesque-var-2.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/assets/styles.css">
     <script>
       (() => {
         document.documentElement.classList.add("js");
-        const storedTheme = localStorage.getItem("dni-theme");
-        const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = storedTheme || (systemPrefersDark ? "dark" : "light");
-        document.documentElement.dataset.theme = theme;
+        try {
+          const saved = localStorage.getItem("dni-theme");
+          const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.dataset.theme = saved === "light" || saved === "dark" ? saved : (systemDark ? "dark" : "light");
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
       })();
     </script>
   </head>
-  <body data-locale="en">
+  <body data-locale="en"><!--
+    THESIS: DNI is a living synthetic garden where one human signal becomes useful products; it refuses the corporate hero and feature-card grid.
+    OWN-WORLD: Forest black, chlorophyll green, warm paper and one amber pulse; full-bleed moving media, ruled editorial typography and square, quiet controls.
+    STORY: Meet the unusual team, understand its operating principles, enter two distinct product worlds, then visit a product or write to DNI.
+    FIRST VIEWPORT: A full-screen moving field carries a left-anchored three-line statement at six-rem scale, with the primary scroll action below and the human-plus-agents truth opposite.
+    FORM: Synthetic Idea Garden, grounded direction seven, seed 0011b9da.
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
     <a class="skip-link" href="#content">Skip to content</a>
-    <div class="page-shell">
-      <header class="site-header reveal" style="--i: 0;">
-        <a class="brand" href="/en/" aria-label="Go to homepage">
-          <span class="brand__eyebrow">Products for humans</span>
-          <span class="brand__name">Donde Nacen las Ideas</span>
-        </a>
-        <div class="site-header__controls">
-          <nav class="locale-switch" aria-label="Language">
-            <a class="locale-switch__link" href="/">ES</a>
-            <a class="locale-switch__link is-active" href="/en/" aria-current="page">EN</a>
-          </nav>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
-            <span class="theme-toggle__label">Theme</span>
-            <span class="theme-toggle__value" data-theme-label>Light</span>
-          </button>
+
+    <header class="site-header site-header--overlay" aria-label="Main header">
+      <a class="brand" href="/en/" aria-label="Donde Nacen las Ideas, home">
+        <span class="brand__mark" aria-hidden="true">DNI</span>
+        <span class="brand__name">Donde Nacen<br>las Ideas</span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="#studio">Studio</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="site-tools">
+        <nav class="language-nav" aria-label="Language">
+          <a href="/" lang="es">ES</a>
+          <a href="/en/" aria-current="page">EN</a>
+        </nav>
+        <button class="plain-control theme-toggle" type="button" aria-label="Change theme" aria-pressed="false">
+          <span aria-hidden="true">Theme</span>
+          <span data-theme-label>Light</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true">
+          <video class="hero__video" muted loop playsinline preload="none" poster="/assets/hero-poster.webp" data-video-ready="true">
+            <source data-src="/assets/media/dni-hero.webm" type="video/webm">
+            <source data-src="/assets/media/dni-hero.mp4" type="video/mp4">
+          </video>
+          <img class="hero__poster" src="/assets/hero-poster.webp" alt="" width="1920" height="1080">
+          <span class="hero__signal hero__signal--one"></span>
+          <span class="hero__signal hero__signal--two"></span>
+          <span class="hero__signal hero__signal--three"></span>
         </div>
-      </header>
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <h1 id="hero-title">
+            <span class="hero-line">One human.</span>
+            <span class="hero-line hero-line--accent">Many minds.</span>
+            <span class="hero-line hero-line--last">Products for humans.</span>
+          </h1>
+          <p class="hero__intro">We are Donde Nacen las Ideas: a small studio where Omar works with AI agents to turn real problems into products people actually enjoy using.</p>
+          <a class="hero__action line-link line-link--light" href="#studio">
+            Meet the studio
+            <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg>
+          </a>
+        </div>
+        <div class="hero__facts" aria-label="Studio facts">
+          <p><span>Based in</span> Zapopan, MX</p>
+          <p><span>Team</span> Omar + AI agents</p>
+          <p><span>Obsession</span> Useful products</p>
+        </div>
+        <button class="motion-toggle" type="button" aria-pressed="false">
+          <span class="motion-toggle__indicator" aria-hidden="true"></span>
+          <span data-motion-label>Pause motion</span>
+        </button>
+      </section>
 
-      <main id="content">
-        <section class="hero section-grid">
-          <div class="hero__lead reveal" style="--i: 1;">
-            <p class="section-kicker">A company website, yes. Corporate chest-thumping, no.</p>
-            <h1>
-              We make digital products because we feel like it.
-              <span>
-                Sometimes because they are needed. Sometimes because it would be silly not to try.
-              </span>
-            </h1>
+      <section class="studio section-shell" id="studio" aria-labelledby="studio-title">
+        <div class="studio__statement">
+          <h2 id="studio-title">A tiny company with an unusual way of working.</h2>
+          <p>No decorative org chart. No meeting to prepare for the meeting. Omar brings the context, the taste, and the final call. The agents research, design, code, test, and start over when something still feels off.</p>
+        </div>
+        <dl class="team-ledger" aria-label="How the work is divided">
+          <div>
+            <dt>The human</dt>
+            <dd><strong>Omar</strong><span>Founder, judgment, and final decision.</span></dd>
           </div>
-          <div class="hero__aside reveal" style="--i: 2;">
-            <p>
-              DNI is a small software company. We like building a few things, taking our time, and
-              releasing them once they feel useful, graceful, and ready to behave in public.
-            </p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="#manifesto">Read the manifesto</a>
-              <a class="button button--ghost" href="#products">See the public product</a>
-            </div>
+          <div>
+            <dt>The robots</dt>
+            <dd><strong>AI agents</strong><span>Product, design, engineering, and operations.</span></dd>
           </div>
-        </section>
+          <div>
+            <dt>The rule</dt>
+            <dd><strong>Useful wins</strong><span>If it gets in the way, simplify it. If it does not help, do not ship it.</span></dd>
+          </div>
+        </dl>
+      </section>
 
-        <section class="manifesto section-grid" id="manifesto">
-          <div class="section-heading reveal" style="--i: 0;">
-            <p class="section-kicker">Manifesto</p>
-            <h2>We like products that solve something real and then politely get out of the way.</h2>
-          </div>
-          <div class="manifesto__body reveal" style="--i: 1;">
-            <p>
-              Not every problem deserves a giant platform, a dashboard with fifteen tabs, or a pile of
-              inflated adjectives. Sometimes a clear, well-made tool is enough, especially when it knows
-              how not to interrupt.
-            </p>
-            <p>
-              We build software for actual people: people with work to do, bills to send, questions to
-              answer, ideas to test, and better things to do than wrestle with a dramatic interface.
-            </p>
-            <p>
-              If something goes public, it is because it already feels useful, light, and pleasant to
-              use. If it still feels stiff, noisy, or too proud of itself, it stays in the kitchen a bit
-              longer.
-            </p>
-          </div>
-          <div class="manifesto__notes reveal" style="--i: 2;">
-            <p>Less showing off. More usefulness.</p>
-            <p>Less template. More judgment.</p>
-            <p>Less ecosystem. More product.</p>
-          </div>
-        </section>
-
-        <section class="products section-grid" id="products">
-          <div class="section-heading reveal" style="--i: 0;">
-            <p class="section-kicker">Already out in the world</p>
-            <h2>Two public products. Two different ways to make life feel more human.</h2>
-          </div>
-          <article class="product-card reveal" style="--i: 1;">
-            <div class="product-card__meta">
-              <img
-                class="product-card__logo"
-                src="/assets/factucat-logo.svg"
-                alt="FactuCat logo"
-                loading="lazy"
-              >
-              <p class="product-card__state">Public</p>
-              <h3>FactuCat</h3>
-              <p class="product-card__eyebrow">Invoicing for humans</p>
-            </div>
-            <div class="product-card__content">
-              <p>
-                FactuCat handles CFDI invoices, payroll, and self-serve invoices by QR or email,
-                without making you wrestle with SAT-flavored bureaucracy.
-              </p>
-              <p>
-                It is legal, clear, and friendly enough to make invoicing feel like a normal task
-                again instead of a monthly administrative side quest.
-              </p>
-              <a class="product-link" href="https://factucat.com" target="_blank" rel="noopener noreferrer">
-                Visit factucat.com
-              </a>
-            </div>
+      <section class="manifesto" aria-labelledby="manifesto-title">
+        <div class="section-shell manifesto__header">
+          <h2 id="manifesto-title">Software should not ask for your patience just to prove it is smart.</h2>
+          <p>We like technology that does its job, explains what matters, and then gets out of the way.</p>
+        </div>
+        <div class="manifesto__lines">
+          <article>
+            <h3>Useful before impressive.</h3>
+            <p>A feature that gives ten minutes back is worth more than a screen designed to collect applause.</p>
           </article>
-          <article class="product-card product-card--warm reveal" style="--i: 2;">
-            <div class="product-card__meta">
-              <img
-                class="product-card__logo product-card__logo--libro"
-                src="/assets/libro-chiquito-logo.svg"
-                alt="Libro Chiquito logo"
-                loading="lazy"
-              >
-              <p class="product-card__state">Public</p>
-              <h3>Libro Chiquito</h3>
-              <p class="product-card__eyebrow">Personalized storybooks for kids</p>
-            </div>
-            <div class="product-card__content">
-              <p>
-                Libro Chiquito turns a child, a family, and a handful of meaningful details into a
-                personalized storybook with carefully crafted illustrations and a printed edition worth keeping.
-              </p>
-              <p>
-                Each book is made to order, reviewed before printing, and delivered as a gift that feels
-                genuinely personal instead of mass-produced.
-              </p>
-              <a class="product-link" href="https://librochiquito.com" target="_blank" rel="noopener noreferrer">
-                Visit librochiquito.com
-              </a>
-            </div>
+          <article>
+            <h3>Clear before clever.</h3>
+            <p>Complexity can live underneath. Up top, things should speak the way actual people speak.</p>
           </article>
-          <aside class="products__teaser reveal" style="--i: 3;">
-            <p class="section-kicker">And yes, more ideas are simmering</p>
-            <p>
-              Not many. Just enough. We would rather show only what can already be touched without asking
-              you to be patient on our behalf.
-            </p>
-          </aside>
-        </section>
+          <article>
+            <h3>Human, even when robots made it.</h3>
+            <p>AI is part of the team, not confetti. Judgment, responsibility, and outcomes still matter.</p>
+          </article>
+        </div>
+      </section>
 
-        <section class="contact section-grid" id="contact">
-          <div class="section-heading reveal" style="--i: 0;">
-            <p class="section-kicker">Contact</p>
-            <h2>If any of this feels right, say hello.</h2>
+      <section class="products section-shell" id="products" aria-labelledby="products-title">
+        <div class="products__intro">
+          <h2 id="products-title">Two products. Both are already out there playing.</h2>
+          <p>We would rather show a few things made well. Today, these are the two ideas with homes of their own.</p>
+        </div>
+
+        <article class="product-stage product-stage--factucat" data-reveal>
+          <div class="product-stage__copy">
+            <img class="product-logo product-logo--factucat" src="/assets/factucat-logo.svg" alt="FactuCat" width="520" height="110">
+            <h3>The SAT speaks in codes. FactuCat answers in plain language.</h3>
+            <p>Invoicing, payroll, and tax automation with operational AI. FactuCat reads, classifies, and validates; you review and decide before stamping the invoice.</p>
+            <a class="line-link" href="https://factucat.com/" target="_blank" rel="noopener noreferrer">
+              Meet FactuCat
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg>
+            </a>
           </div>
-          <div class="contact__body reveal" style="--i: 1;">
-            <p>
-              We prefer talking to real people before sounding like a serious corporation. If you want to
-              say hi, ask something, or share an interesting problem, we are here.
-            </p>
-            <a class="contact-link" href="mailto:hola@dni.lat">hola@dni.lat</a>
+          <div class="factucat-demo" aria-label="Illustrative FactuCat demonstration">
+            <p class="demo-note">Illustrative demonstration</p>
+            <div class="demo-message demo-message--human">
+              <span>You say it</span>
+              <p>“Invoice Estudio Norte for brand strategy.”</p>
+            </div>
+            <div class="demo-path" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="demo-message demo-message--agent">
+              <span>FactuCat translates it</span>
+              <p>CFDI 4.0 prepared and ready for review.</p>
+            </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </article>
+
+        <article class="product-stage product-stage--libro" data-reveal>
+          <div class="product-stage__copy">
+            <img class="product-logo product-logo--libro" src="/assets/libro-chiquito-logo.svg" alt="Libro Chiquito" width="520" height="133">
+            <h3>A story that could not belong to anyone else.</h3>
+            <p>Libro Chiquito turns names, loved ones, and tiny personal details into custom stories and coloring adventures, printed to stay in the family for years.</p>
+            <a class="line-link" href="https://librochiquito.com/" target="_blank" rel="noopener noreferrer">
+              Meet Libro Chiquito
+              <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M14 7l5 5-5 5"/></svg>
+            </a>
+          </div>
+          <div class="book-demo" aria-label="Illustrative representation of a Libro Chiquito book">
+            <div class="book-demo__shadow" aria-hidden="true"></div>
+            <div class="book-demo__cover">
+              <span>An adventure made just for</span>
+              <strong>your little one</strong>
+              <i aria-hidden="true"></i>
+              <small>Libro Chiquito</small>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="team section-shell" aria-labelledby="team-title">
+        <h2 id="team-title">What about the robots?</h2>
+        <div class="team__body">
+          <p class="team__lead">They are not glued on top of the work. <strong>They are the team.</strong></p>
+          <p>They help us understand problems, explore paths, write code, review details, and keep products running. Omar decides what deserves to exist and remains responsible for what goes out into the world.</p>
+          <p>The combination is unusual. The goal isn’t unusual: make clear, thoughtful, useful things for actual people.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="section-shell contact__inner">
+          <h2 id="contact-title">Have an interesting problem—or just want to say hi?</h2>
+          <a class="contact__email" href="mailto:hola@dni.lat">hola@dni.lat</a>
+          <p>Humans and robots reply. Sometimes in that order.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <strong>Donde Nacen las Ideas</strong>
+        <span>Products for humans.</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="https://factucat.com/" target="_blank" rel="noopener noreferrer">FactuCat</a>
+        <a href="https://librochiquito.com/" target="_blank" rel="noopener noreferrer">Libro Chiquito</a>
+        <a href="/en/privacy/">Privacy</a>
+        <a href="mailto:hola@dni.lat">Contact</a>
+      </div>
+      <address>
+        Donde Nacen las Ideas SA de CV<br>
+        Avenida Guadalupe 4872, suite 101<br>
+        Jardines de Guadalupe, Zapopan, Jalisco, 45030, Mexico
+      </address>
+      <p class="site-footer__copy">© 2026 DNI. Made by one human and several robots.</p>
+    </footer>
 
     <script src="/assets/site.js"></script>
   </body>
