@@ -95,7 +95,7 @@ address { font-style: normal; }
 .site-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items: start;
+  align-items: center;
   gap: 1.5rem;
   width: 100%;
   padding: 1.4rem var(--gutter);
@@ -111,24 +111,19 @@ address { font-style: normal; }
 
 .brand {
   display: flex;
-  align-items: flex-start;
-  gap: .8rem;
   width: max-content;
   text-decoration: none;
 }
 
-.brand__mark {
-  font-size: 1.28rem;
-  line-height: 1;
-  font-weight: 780;
-  letter-spacing: -.05em;
+.brand__logo {
+  width: 9rem;
+  height: auto;
 }
 
-.brand__name {
-  font-size: .73rem;
-  line-height: 1.15;
-  font-weight: 520;
-  letter-spacing: .015em;
+/* Exact white recoloring preserves the approved artwork's alpha and geometry. */
+.site-header--overlay .brand__logo,
+:root[data-theme="dark"] .brand__logo {
+  filter: brightness(0) invert(1);
 }
 
 .primary-nav, .language-nav, .site-tools {
@@ -529,7 +524,7 @@ address { font-style: normal; }
 @media (max-width: 42rem) {
   :root { --gutter: 1.15rem; }
   .site-header { gap: 1rem; padding-top: 1rem; }
-  .brand__name { display: none; }
+  .brand__logo { width: 7.5rem; }
   .site-tools { gap: .65rem; }
   .theme-toggle { padding-left: .65rem; }
   .theme-toggle span:first-child { display: none; }
