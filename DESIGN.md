@@ -1,7 +1,7 @@
 ---
 version: alpha
 name: Donde Nacen las Ideas
-description: A cinematic Synthetic Idea Garden for calm, useful products made by one human and many AI agents.
+description: A cinematic Synthetic Idea Garden for calm, useful products made by two humans and many AI agents.
 colors:
   primary: "#09110c"
   surface-paper: "#f2f0e8"
@@ -32,6 +32,8 @@ colors:
   book-paper: "#f7dfb8"
   book-ink: "#3a241b"
   contact-copy: "#edf5e9"
+  rango-surface: "#e5eddf"
+  rango-ink: "#243e40"
 typography:
   hero-display:
     fontFamily: "Bricolage Grotesque, Arial Narrow, sans-serif"
@@ -144,6 +146,12 @@ components:
     textColor: "{colors.text-ink}"
     rounded: "{rounded.none}"
     padding: "1.2rem 0 1.5rem"
+  line-link-rango:
+    backgroundColor: "{colors.rango-surface}"
+    textColor: "{colors.rango-ink}"
+    typography: "{typography.action-label}"
+    rounded: "{rounded.none}"
+    padding: "0px"
   factucat-message:
     backgroundColor: "{colors.factucat-field}"
     textColor: "{colors.factucat-copy}"
@@ -167,22 +175,22 @@ components:
 
 **Creative North Star: "Synthetic Idea Garden"**
 
-The Synthetic Idea Garden treats DNI as a living field in which one human signal organizes many precise synthetic responses. The shared world is editorial and cinematic: a full-bleed forest scene opens the homepage, while warm paper and ruled type create long, calm reading stages for the studio, manifesto, products, team, contact, and legal copy.
+The Synthetic Idea Garden treats DNI as a living field where Omar and Manny work alongside AI agents. The shared world is editorial and cinematic: a full-bleed forest scene opens the homepage, while warm paper and ruled type create long, calm reading stages for the studio, manifesto, products, team, contact, and legal copy.
 
-Density stays low and composition stays asymmetric. Oversized narrow text, generous responsive gaps, square controls, hairline dividers, and two product-specific material worlds supply character without turning the site into a generic card grid. The system is bilingual and theme-aware, with motion enhancement subordinate to static legibility.
+Density stays low and composition stays asymmetric. Oversized narrow text, generous responsive gaps, square controls, hairline dividers, and three project-specific material worlds supply character without turning the site into a generic card grid. The system is bilingual and theme-aware, with motion enhancement subordinate to static legibility.
 
 **Key Characteristics:**
 - Forest-black cinematic fields beside warm editorial paper.
 - One variable grotesque family stretched across display, body, label, and legal roles.
 - Asymmetric two-column compositions that collapse to a single reading sequence.
 - Square controls, hairline rules, and restrained depth.
-- Product-specific lavender and peach stages inside the shared DNI frame.
+- Project-specific lavender, peach, and sage stages inside the shared DNI frame.
 
 **Scope boundary.** This document carbonizes the homepage and shared visual system implemented by `index.html`, `en/index.html`, both privacy pages, `assets/styles.css`, `assets/site.js`, the current poster, and the shipped font. It does not define the independent FactuCat or Libro Chiquito product design systems, invent form/modal/chip patterns that do not exist, or prescribe visual content for a future hero video beyond the integration behavior already present.
 
 ## Colors
 
-The shared DNI palette moves between forest-black cinematic fields and warm paper editorial surfaces; brighter color is confined to a green signal language and the two named product stages.
+The shared DNI palette moves between forest-black cinematic fields and warm paper editorial surfaces; brighter color is confined to a green signal language and the named project stages.
 
 ### Primary
 - **Forest Black** (`colors.primary`): fixed hero, manifesto, and footer field; also the homepage theme color.
@@ -200,6 +208,7 @@ The shared DNI palette moves between forest-black cinematic fields and warm pape
 - **Libro Peach Surface** (`colors.libro-surface`): the Libro Chiquito copy half.
 - **Libro Brown Field** (`colors.libro-field`): the illustrated book stage.
 - **Book Paper and Ink** (`colors.book-paper`, `colors.book-ink`): the physical book artifact.
+- **Rango Sage and Ink** (`colors.rango-surface`, `colors.rango-ink`): a calm copy panel beside Rango's official café image; these colors come from the live Rango site.
 - **Amber Human Signal** (`colors.amber-signal`): the single warm pulse in the hero poster; it is not a general interface accent.
 
 ### Neutral
@@ -207,7 +216,7 @@ The shared DNI palette moves between forest-black cinematic fields and warm pape
 - **Night Paper Set** (`colors.surface-paper-dark`, `colors.surface-raised-dark`, `colors.text-ink-dark`, `colors.text-muted-dark`, `colors.divider-dark`): the same semantic roles after the dark theme override.
 - **Overlay Paper** (`colors.overlay-paper`): fixed near-white foreground for the cinematic hero and focus outline.
 
-**The Controlled Field Rule.** Forest black, warm paper, and green carry DNI; lavender and peach belong only to the product worlds, and amber remains a signal inside the hero asset.
+**The Controlled Field Rule.** Forest black, warm paper, and green carry DNI; lavender, peach, and sage belong to the project worlds, and amber remains a signal inside the hero asset.
 
 ## Typography
 
@@ -277,6 +286,7 @@ Organic shapes belong to imagery and illustration. The hero poster uses layered 
 
 ### Product Stages
 - Product stages are material sections, not reusable marketing cards. FactuCat pairs a lavender copy surface with a deep-violet translation diagram; Libro Chiquito pairs a peach copy surface with an angled, shadowed book on a brown geometric field.
+- Rango extends the same split stage with sage copy and a self-hosted image from its official site. Its unchanged official icon accompanies the name in DNI typography; no replacement wordmark is drawn. Copy precedes imagery at the existing breakpoint. The photo panel has a 32rem minimum height and uses `object-fit: cover`.
 - Each stage preserves the supplied product logo, a large narrow headline, a short body measure, and the shared ruled action link. On mobile the copy and illustration become consecutive full-width panels.
 
 ### FactuCat Translation Diagram

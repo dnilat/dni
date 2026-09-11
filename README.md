@@ -24,6 +24,17 @@ El hero usa `assets/media/dni-hero.webm` con fallback H.264 en `assets/media/dni
 
 Los prompts y parámetros de regeneración están en [`VIDEO-PROMPTS.md`](VIDEO-PROMPTS.md). El script no carga video cuando el navegador reporta ahorro de datos o `prefers-reduced-motion`.
 
+## Proyectos y equipo
+
+Omar y Manny son los humanos al frente de DNI, junto a agentes de IA; Omar conserva la decisión final. Las portadas ES/EN presentan FactuCat, Libro Chiquito y Rango. El enlace de Rango es exactamente `https://rangosalud.com`.
+
+Assets de Rango obtenidos del sitio oficial, sin redibujar el isotipo ni generar imágenes:
+
+- `assets/rango-icon.svg`: `https://rangosalud.com/icon.svg?icon.0lwpgngc033qg.svg`, copiado sin cambios. El sitio usa un wordmark HTML/CSS; aquí mostramos su isotipo oficial junto al nombre en la tipografía de DNI, sin simular otro logo.
+- `assets/rango-cafe.webp`: `https://rangosalud.com/_next/image?url=%2Fimages%2Frango-cafe.png&w=1080&q=75`, respuesta WebP del optimizador oficial (1080 × 720), autoalojada sin nuevas llamadas a terceros.
+
+La descripción se limita a coordinación de consultas, entrega de medicamento indicado y apoyo entre citas con médicos y proveedores aliados. No promete resultados ni añade credenciales médicas o precios. La foto es una imagen editorial del sitio de Rango, no un testimonio ni evidencia clínica.
+
 ## Privacidad
 
 El sitio no integra analítica, píxeles publicitarios, formularios ni cookies de seguimiento. Solo guarda la preferencia `dni-theme` en `localStorage`. Si esto cambia, actualiza ambas políticas de privacidad antes de desplegar.
